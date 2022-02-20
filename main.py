@@ -1,3 +1,5 @@
+pip install easyocr
+
 import json
 import time
 import os
