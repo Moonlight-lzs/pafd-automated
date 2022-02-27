@@ -233,6 +233,15 @@ class Zlapp(Fudan):
                         "code": code,
                     }
                 )
+            else if province == "上海市":
+                self.last_info.update(
+                {
+                "tw" : "13",
+                "province": "上海市",
+                "city" : "上海市",
+                "area" : " ".join(("上海市", "虹口区"))
+                }
+                )
             else:
                 self.last_info.update(
                     {
@@ -244,24 +253,6 @@ class Zlapp(Fudan):
                         #"fxyy": "",  # 返校原因
                         "code": code,
                     }
-                )
-            if province == "上海市" :
-                self.last_info.update(
-                {
-                "tw" : "13",
-                "province": "上海市",
-                "city" : "上海市",
-                "area" : " ".join(("上海市", "虹口区"))
-                }
-                )
-            else:
-                self.last_info.update(
-                {
-                "tw" : "13",
-                "province": province,
-                "city" : city,
-                "area" : " ".join((province, city, district))
-                }
                 )
             # print(self.last_info)
             save = self.session.post(
