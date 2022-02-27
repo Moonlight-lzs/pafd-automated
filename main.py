@@ -233,7 +233,7 @@ class Zlapp(Fudan):
                         "code": code,
                     }
                 )
-            else if province == "上海市":
+            elif province == "上海市":
                 self.last_info.update(
                 {
                 "tw" : "13",
