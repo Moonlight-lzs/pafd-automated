@@ -239,7 +239,7 @@ class Zlapp(Fudan):
                 "tw" : "13",
                 "province": "上海市",
                 "city" : "上海市",
-                "area" : " ".join(("上海市", "虹口区"))
+                "area" : " ".join(("上海市", "杨浦区"))
                 }
                 )
             else:
